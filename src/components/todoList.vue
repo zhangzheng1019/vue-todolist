@@ -3,7 +3,7 @@
     <h1 v-text="title"></h1>
     <input type="text" name="item" v-model="newItem" @keyup.enter="addItem">
     <ul>
-      <li v-bind:class="{finished:item.isFinished}" v-for="item in items" v-on:click="toggleFinish(item)" v-on:mouseenter="toggleDel(item)">{{item.label}}<span>{{item.isDelete}}</span></li>
+      <li v-bind:class="{finished:item.isFinished}" v-for="item in items" v-on:click="toggleFinish(item)" v-on:mouseenter="toggleDel(item)">{{item.label}}<span> {{item.isDelete}}</span></li>
     </ul>
   </div>
 </template>
